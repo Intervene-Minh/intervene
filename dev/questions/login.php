@@ -376,14 +376,14 @@ a.Button--primary, button.Button--primary {
                 <img src="images/intervenenew.png" alt="" style="max-width: 200px !important">
               </div>
               <div class="text-center">
-                <h1>Login to Intervene</h1>
+                <h1>Login to Intervene fvggg</h1>
                 
                
               </div>
                   <?php echo ($error != "") ? "<div class='alert alert-danger' role='alert' style='text-align:center;background-color:#d9534f;border-color:#d9534f;color:#fff'>" . $error . "</div>" : ""; ?>
                 <form  id="form-login" class="form-login mb-4" action="" method="post" >
                  <div class="form-group">
-                  <label class="d-none" for="signup-email">dffRole</label>
+                  <label class="d-none" for="signup-email">Role</label>
                   <select name="role" class="form-control form-control-lg uname" onchange='SelectRole(this.value);'>
                         <option value="">Student</option>
                         <option value="teacher">Teacher</option>
