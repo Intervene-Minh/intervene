@@ -1,0 +1,4 @@
+[06-Jan-2018 22:18:36 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/lone9378/public_html/tutorgigs.io/signup/connect.php on line 2
+[06-Jan-2018 22:18:36 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/lone9378/public_html/tutorgigs.io/signup/connect.php on line 4
+[06-Jan-2018 22:18:43 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/lone9378/public_html/tutorgigs.io/signup/connect.php on line 2
+[06-Jan-2018 22:18:43 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/lone9378/public_html/tutorgigs.io/signup/connect.php on line 4

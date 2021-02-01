@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ChromeBook (CrOS) Test Page</title>
+        <meta name="description" content="ChromeBook (CrOS) Test Page">
+        <meta name="author" content="Intervene">    
+    </head>
+
+    <body>
+        <div>
+            <h1>Chrome Book Detector</h1>
+            <p id="msg">checking....</p>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {     
+                let msg = document.getElementById('msg');
+                if (/\bCrOS\b/.test(navigator.userAgent)) {
+                    msg.innerHTML = "You are using ChromeOS/Chromebook - Please turn off video";
+                } else {
+                    msg.innerHTML = "You are not using ChromeOS or a Chromebook."
+                }
+            }, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Myriad Pro Semibold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+body, html {
+	font-family: 'Myriad Pro Regular';
+	font-size: 14px;
+	color: #686868;
+}
+a, a:hover {
+	color: #686868;
+}
+#content h4, #content .h4 {
+    font-size: 16px;
+}
+.clear {
+	display: block;
+	clear: both;
+}
+.clearnone {
+	display: block;
+	clear: both;
+	height: 0;
+}
+.fullwidth {
+	width: 100%;
+}
+.no_padding {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.fa-folder,
+.fa-folder-open {
+	color: #f0ad4e !important;
+}
+.form_button {
+	width: auto;
+        padding-left:5px !important;
+        padding-right:5px !important;
+            
+	height: 31px;
+	line-height: 31px;
+	padding: 0;
+	border: 0 none;
+	background-color: #1b64a9;
+	text-align: center;
+	text-transform: capitalize;
+	color: #ffffff;
+}
+.form_button:hover {
+	background-color: #f0ad4e;
+}
+.submit_button {
+	margin-right: 15px;
+}
+
+
+/* Header */
+#header {
+	height: 52px;
+	line-height: 52px;
+	background-color: white;
+	border-bottom: 1px solid #d4d4d4;
+}
+#header .logo {
+	display: inline;
+	float: left;
+}
+#header .logo h1 {
+	display: none;
+}
+#header .users {
+	text-align: right;
+}
+#header .users a {
+	font-weight: normal;
+	color: #8e8e8e;
+}
+#header .users a.links {
+	margin-left: 20px;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+/* Main */
+#main {
+	padding: 10px 0 50px;
+	background-color:white;
+	color: black;
+}
+
+
+/* Sidebar */
+#sidebar {
+	padding: 0 20px 10px;
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 0 10px 0 #d4d4d4;
+	-moz-box-shadow: 0 0 10px 0 #d4d4d4;
+}
+#sidebar .widget {
+	padding-top: 5px;
+}
+#sidebar h4.widget-title {
+	padding-bottom: 9px;
+	border-bottom: 1px solid #d5d5d7;
+	font-weight: bold;
+}
+#sidebar h4.widget-title a:hover {
+	color: #1b64a9;
+}
+#sidebar .widget-content {
+	padding-left: 40px;
+}
+#sidebar .fa {
+	margin-right: 5px;
+	color: #1b64a9;
+}
+#sidebar .fa.fa-angle-down,
+#sidebar .fa.fa-angle-right {
+    display: inline-block;
+    width: 10px;
+    text-align: center;
+    cursor: pointer;
+	color: #686868;
+    opacity: 0.6;
+}
+#sidebar .fa.fa-angle-down {
+	display: none;
+}
+#sidebar h4.widget-title .fa {
+	margin-right: 15px;
+	color: #f0ad4e;
+}
+#sidebar ul {
+	padding: 0;
+	margin-left: -15px;
+	list-style: none;
+}
+#sidebar ul li {
+	padding: 5px 0;
+}
+#sidebar ul li.active > a,
+#sidebar ul li.sub-active > a {
+	text-decoration: underline;
+}
+#sidebar ul li ul.subitem {
+	display: none;
+	margin-left: 30px;
+}
+#sidebar ul li.active ul.subitem {
+	display: block;
+}
+#sidebar ul li.active.has-child .fa.fa-angle-down {
+	display: inline-block;
+}
+#sidebar ul li.active.has-child .fa.fa-angle-right {
+	display: none;
+}
+
+#sidebar .badge {
+	float: right;
+	background-color: #aaaaaa;
+}
+
+
+/* Folder */
+#folder {}
+
+
+/* Manager User */
+#manager_user {}
+#manager_user h3.widget-title {
+	border: 0 none;
+}
+
+
+/* Content */
+#content {
+	padding: 0 0 0 30px;
+}
+#content .content_wrap {
+	border: 1px solid #d4d4d4;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 0 10px 0 #d4d4d4;
+	-moz-box-shadow: 0 0 10px 0 #d4d4d4;
+}
+#content .ct_heading {
+	padding: 0 20px;
+	background-color: #1b64a9;
+	color: #ffffff;
+}
+#content .ct_heading h3 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	line-height: 42px;
+	font-size: 18px;
+}
+#content .ct_heading h3 .fa {
+	margin-right: 10px;
+}
+#content .ct_heading ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style: none;
+}
+#content .ct_heading ul li {
+	display: inline;
+	padding: 0 5px;
+	line-height: 40px;
+}
+#content .ct_heading ul li a {
+	font-size: 18px;
+	color: #ffffff;
+}
+#content .ct_heading ul li a:hover {
+	color: #f0ad4e;
+}
+
+#content .ct_display {
+	padding: 25px 20px;
+}
+#content .ct_display.no_padding {
+	background-color: #f4f4f4;
+}
+#content .ct_display .item-wrap {
+	padding: 20px 0;
+	text-align: center;
+}
+#content .ct_display .item-wrap .item-title a {
+	text-transform: uppercase;
+}
+#content .ct_display .item-wrap .item-desc {
+	color: #aaaaaa;
+}
+#content .ct_display .item-listing {
+	padding: 15px 20px;
+	border-top: 1px solid #d2d2d2;
+}
+#content .ct_display .item-listing.second {
+	background-color: #ececec;
+}
+#content .ct_display .item-listing a.toggle-detail {
+	margin-left: 20px;
+}
+#content .ct_display .item-listing .item-detail {
+	display: none;
+	padding-top: 10px;
+}
+#content .ct_display .item-listing .item-detail ul.list-answers {
+    list-style-type: lower-alpha;
+}
+#content .ct_display .item-listing .item-detail ul.list-answers li {
+	float: left;
+	width: 45%;
+	padding-left: 10px;
+	position: relative;
+}
+#content .ct_display .item-listing .item-detail ul li.col-right {
+	float: right;
+}
+#content .ct_display .item-listing .item-detail ul li .fa {
+	position: absolute;
+	left: -40px;
+	top: 0;
+}
+
+
+/* Pagination */
+.pagination {
+	text-align: right;
+}
+.pagination ul,
+.pagination ul li,
+.pagination select {
+	display: inline;
+}
+.pagination ul {
+	padding: 0;
+}
+.pagination ul li {
+	padding: 0 2px;
+	vertical-align: top;
+}
+.pagination ul li span {
+	padding: 0 8px;
+}
+
+.center-pills {
+    display: flex;
+    justify-content: center;
+	padding: 15px;
+}
+
+/* Footer */
+#footer {
+	height: 55px;
+	line-height: 55px;
+	background-color: #222222;
+	border-top: 1px solid #000000;
+	color: #666666;
+}
+#footer p {
+	margin: 0;
+}
+.close-but{background:url('../images/more-down.gif') top right no-repeat; background-position: right center;}
+.open {background:url('../images/more-right.gif') top right no-repeat; background-position: right center; }
+.warning_heading.clear h3 a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.warning_heading.clear {
+    background: #33c418;
+    padding: 1px 0px 1px 0px;
+    text-align: center;
+	margin:-10px 0px 0px;
+}
+select.form-control.uname {
+    width: 85%;
+    float: right;
+}

@@ -1,0 +1,21 @@
+# before_script:
+#   - sudo apt-get install -y -qq nodejs ruby
+#   - sudo npm install -g foundation-cli bower gulp
+#   - npm install
+#   - sudo gem install bundler
+#   #- bower install
+
+stages:
+  - deploy
+
+deploy_job:
+  stage: deploy
+  environment: test
+  script:
+    - "sudo mkdir -p /usr/share/nginx/p2g-admin"
+    - "sudo rm -rf /usr/share/nginx/p2g-admin/*"
+    - "sudo cp -R ./* /usr/share/nginx/p2g-admin/."
+    - "sudo chgrp -R www-data /usr/share/nginx/p2g-admin/"
+    - "sudo cp  /usr/share/nginx/p2g-admin/config.test.php  /usr/share/nginx/p2g-admin/config.php"
+  only:
+    - test

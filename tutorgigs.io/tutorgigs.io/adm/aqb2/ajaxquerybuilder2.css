@@ -1,0 +1,60 @@
+html,body { margin:0px; padding:0px; height:100%; width:100%; overflow:hidden; font-family:verdana,arial,helvetica,sans-serif; }
+div,td,button,input,span,li,textarea,select { font-size:10px; }
+
+button { width:75px; height:20px; }
+
+a { text-decoration:none; color:#000000; }
+a:hover { text-decoration:underline; color:#000000; }
+a:active,a:focus { outline: 0;-moz-outline-style: none; }
+
+ul.node, ul.node ul { white-space:nowrap; list-style-type:none; margin-top:1px; padding:0; }
+ul.node li { margin: 0; padding:0 14px; line-height:16px; }
+ul.node li.expanded { background:url(res/bullet_toggle_minus.png) no-repeat; padding:0 14px; }
+ul.node li.collapsed { background:url(res/bullet_toggle_plus.png) no-repeat; padding:0 14px; }
+
+span.node { display:inline-block; line-height:16px; cursor:pointer; }
+span.node:hover { text-decoration:underline; }
+
+span.sql_query { background:url('res/page_white_database16.png') no-repeat; padding-left:18px; font-style:italic; }
+span.sql_select { background:url('res/table_select_big16.png') no-repeat; padding-left:18px; font-weight:bold; }
+span.sql_expression { background:url('res/table_sum16.png') no-repeat; padding-left:18px; }
+span.sql_column { background:url('res/table_select_column16.png') no-repeat; padding-left:18px; }
+span.sql_from { background:url('res/table_multiple16.png') no-repeat; padding-left:18px; font-weight:bold; }
+span.sql_table { background:url('res/table16.png') no-repeat; padding-left:18px; }
+span.sql_search { background:url('res/table_tab_search16.png') no-repeat; padding-left:18px; font-weight:bold; }
+span.sql_condition { background:url('res/hbox16.png') no-repeat; padding-left:18px; }
+span.sql_groupby { background:url('res/three_tags16.png') no-repeat; padding-left:18px; font-weight:bold; }
+span.sql_group { background:url('res/tag_orange16.png') no-repeat; padding-left:18px; }
+span.sql_orderby { background:url('res/table_sort16.png') no-repeat; padding-left:18px; font-weight:bold; }
+span.sql_asc { background:url('res/sort_ascending16.png') no-repeat; padding-left:18px; }
+span.sql_desc { background:url('res/sort_descending16.png') no-repeat; padding-left:18px; }
+
+div.tableItem { float:left; line-height:16px; margin:2px; background:url('res/table16.png') no-repeat; cursor:pointer; padding-left:18px; width:100px; }
+div.nodeAction { line-height:16px; padding-left:2px; cursor:pointer; }
+div.tableItem:hover,div.nodeAction:hover { text-decoration:underline; }
+div.palettaClosed { background:url('res/arrow_state_grey_expanded.png') no-repeat; }
+div.palettaOpen { background:url('res/arrow_state_grey_collapsed.png') no-repeat; }
+div.modal-message { -moz-border-radius: 4px; border-radius: 4px; display:none; position:absolute; z-index:30; width:330px; min-height:20px; top:40px; left:50%; margin-left:-165px; padding:5px; font-size:16px; font-weight:bold; text-align:center; vertical-align:middle;" }
+
+span.tabDefault { cursor:pointer; color:#FFFFFF; }
+span.tabSelected { cursor:default; color:#FFFFFF; font-weight:bold; border-bottom:2px solid #BB0000; }
+
+.entityHeader {background-image: linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -o-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -moz-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -webkit-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -ms-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.23, rgb(244,244,244)),color-stop(0.57, rgb(255,255,255)));}
+.entityCaption {cursor:move; padding-left:2px; font-weight:bold; border-bottom:1px solid #CCCCCC;}
+.entityField { cursor:pointer; }
+
+.result-header { border-bottom:1px solid #CCCCCC; }
+.result-column { background-image: linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -o-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -moz-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -webkit-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -ms-linear-gradient(bottom, rgb(244,244,244) 23%, rgb(255,255,255) 57%);
+                background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.23, rgb(244,244,244)),color-stop(0.57, rgb(255,255,255)));
+				padding:3px 5px; font-weight:bold; background:#F7F7F7; border-right:1px solid #CCCCCC; border-bottom:1px solid #CCCCCC; }
+.result-value { padding:2px 5px; border-right:1px solid #eeeeee; border-bottom:1px solid #eeeeee;}
+.field-type-INT, .field-type-DECIMAL { text-align:right; }

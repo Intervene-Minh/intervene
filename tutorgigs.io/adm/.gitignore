@@ -1,0 +1,7 @@
+.vagrant
+*~
+.settings
+.buildpath
+.project
+error_log
+config.php

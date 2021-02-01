@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+    <display-name>AjaxQueryBuilder.2013.00</display-name>
+    <description>AjaxQueryBuilder.2013.00 by nickyb</description>
+    
+	<servlet>
+		<servlet-name>invoker</servlet-name>  
+		<servlet-class>net.nickyb.framework.Invoker</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>invoker</servlet-name>
+		<url-pattern>/invoke</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>download</servlet-name>  
+		<servlet-class>net.nickyb.ajaxquerybuilder.DownloadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>download</servlet-name>
+		<url-pattern>/download</url-pattern>
+	</servlet-mapping>
+</web-app>
