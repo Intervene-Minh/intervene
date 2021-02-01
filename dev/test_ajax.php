@@ -1,41 +1,33 @@
 <?php
-/****
- $start_date = date('Y-m-d h:i:s');
-  # Students :teacher_id school_id grade_level_id class_id created
-  @ Student All pending
-  1. Pending quiz
-  2. pending : assessment
-  3. upcoming session > 
-    $board_url='session-board.php';
-  $actvity_url="actvity.php";
-  $page_name='Recent session';
- $no_record='No record found.!';
- * **/
+
+/***
+// error_reporting(-1);
+//     ini_set('display_errors', 1);
  // echo 'Time:'.$start_date = date('Y-m-d h:i:s');
 
-//include("student_header.php");
-include('inc/connection.php'); 
-session_start();
-  ob_start();
+**/
 
 
-if (!$_SESSION['student_id']) {
-    header('Location: login.php');
-    exit;
-}
+ include('inc/connection.php'); 
+session_start(); ob_start();
 
-/////////////////////
-include("student_inc.php");
-include("ses_live_inc.php");# Tutor sesion Live 
-   print_r($time_arr); # globals for sessions
-#####################
- // page globals 
-  $page_name='Recent session';
 
-$json=json_encode($time_arr);
+echo  $val1 = date("Y-m-d H:i:s"); #currTime
 
- //echo $json;
+$start_date = new DateTime('2007-09-01 04:10:58');
+$since_start = $start_date->diff(new DateTime('2012-09-11 10:25:00'));
+print_r($since_start); die; 
+echo $since_start->days.' days total<br>';
+echo $since_start->y.' years<br>';
+echo $since_start->m.' months<br>';
+echo $since_start->d.' days<br>';
+echo $since_start->h.' hours<br>';
+echo $since_start->i.' minutes<br>';
+echo $since_start->s.' seconds<br>';
 
-///Listing////////////////
+///////////////////////
+// phpinfo();
+ die; 
+
 
 ?>

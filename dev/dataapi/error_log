@@ -1,12 +1,333 @@
-[20-Mar-2020 08:44:45 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:44:45 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:44:45 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:44:45 UTC] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
-[20-Mar-2020 08:44:45 UTC] PHP Warning:  mysql_query(): Access denied for user 'diablo'@'localhost' (using password: NO) in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
-[20-Mar-2020 08:44:45 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
-[20-Mar-2020 08:45:23 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:45:23 UTC] PHP Warning:  include(config/connection.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:45:23 UTC] PHP Warning:  include(): Failed opening 'config/connection.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 2
-[20-Mar-2020 08:45:23 UTC] PHP Deprecated:  mysql_query(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
-[20-Mar-2020 08:45:23 UTC] PHP Warning:  mysql_query(): Access denied for user 'diablo'@'localhost' (using password: NO) in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
-[20-Mar-2020 08:45:23 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/lone9378/public_html/tutorgigs.io/dataapi/addroomApi.php on line 29
+[08-Jan-2019 01:32:21 UTC] PHP Fatal error:  Cannot redeclare ProjectController::upload() in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/ProjectController.php on line 4842
+[08-Jan-2019 01:32:37 UTC] PHP Fatal error:  Cannot redeclare ProjectController::upload() in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/ProjectController.php on line 4842
+[08-Jan-2019 01:33:02 UTC] PHP Fatal error:  Cannot redeclare ProjectController::upload() in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/ProjectController.php on line 4842
+[08-Jan-2019 01:35:26 UTC] PHP Fatal error:  Cannot redeclare ProjectController::upload() in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/ProjectController.php on line 4842
+[08-Jan-2019 02:08:46 UTC] PHP Fatal error:  Allowed memory size of 209715200 bytes exhausted (tried to allocate 109856544 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[08-Jan-2019 02:12:08 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 36585232 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[08-Jan-2019 03:59:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Jan-2019 04:00:08 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Jan-2019 04:00:11 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Jan-2019 04:00:23 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Jan-2019 04:05:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Jan-2019 04:05:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[15-Jan-2019 18:37:49 UTC] PHP Fatal error:  Allowed memory size of 209715200 bytes exhausted (tried to allocate 109856544 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[15-Jan-2019 18:39:33 UTC] PHP Fatal error:  Allowed memory size of 209715200 bytes exhausted (tried to allocate 109856544 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[17-Jan-2019 07:53:28 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[17-Jan-2019 07:54:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[24-Jan-2019 09:49:03 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[24-Jan-2019 09:49:30 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[24-Jan-2019 09:50:45 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[24-Jan-2019 09:51:02 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[25-Jan-2019 19:04:05 UTC] PHP Fatal error:  Allowed memory size of 209715200 bytes exhausted (tried to allocate 109856544 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[28-Jan-2019 08:39:41 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[28-Jan-2019 08:47:38 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[28-Jan-2019 08:49:03 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[28-Jan-2019 08:49:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[31-Jan-2019 07:46:16 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[06-Feb-2019 17:45:07 UTC] PHP Fatal error:  Allowed memory size of 209715200 bytes exhausted (tried to allocate 109856544 bytes) in /home/n92c729d2po8/public_html/checkmate/api/system/core/Security.php on line 448
+[08-Feb-2019 05:04:22 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[08-Feb-2019 05:04:25 UTC] PHP Warning:  Unterminated comment starting line 4232 in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/ProjectController.php on line 4232
+[08-Feb-2019 05:04:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[09-Feb-2019 05:58:31 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[10-Feb-2019 16:54:45 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[10-Feb-2019 16:55:17 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[10-Feb-2019 16:55:23 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[10-Feb-2019 16:55:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 06:27:21 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:23:20 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:24:17 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of Error given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(Error))
+#1 [internal function]: _exception_handler(Object(Error))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:25:23 UTC] PHP Warning:  Unterminated comment starting line 850 in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/RabbitController.php on line 850
+[11-Feb-2019 09:25:23 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:25:25 UTC] PHP Warning:  Unterminated comment starting line 850 in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/RabbitController.php on line 850
+[11-Feb-2019 09:25:25 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:26:15 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:27:44 UTC] PHP Warning:  Unterminated comment starting line 850 in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/RabbitController.php on line 850
+[11-Feb-2019 09:27:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[11-Feb-2019 09:27:45 UTC] PHP Warning:  Unterminated comment starting line 850 in /home/n92c729d2po8/public_html/checkmate/api/application/controllers/RabbitController.php on line 850
+[11-Feb-2019 09:27:45 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[13-Feb-2019 11:15:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[14-Feb-2019 05:17:16 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[14-Feb-2019 05:17:18 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to CI_Exceptions::show_exception() must be an instance of Exception, instance of ParseError given, called in /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php on line 658 and defined in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php:190
+Stack trace:
+#0 /home/n92c729d2po8/public_html/checkmate/api/system/core/Common.php(658): CI_Exceptions->show_exception(Object(ParseError))
+#1 [internal function]: _exception_handler(Object(ParseError))
+#2 {main}
+  thrown in /home/n92c729d2po8/public_html/checkmate/api/system/core/Exceptions.php on line 190
+[02-Sep-2019 10:16:26 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 5702
+[02-Sep-2019 10:18:53 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 5703
+[02-Sep-2019 10:20:21 UTC] PHP Parse error:  syntax error, unexpected ''Please sele' (T_ENCAPSED_AND_WHITESPACE) in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 5698
+[02-Sep-2019 10:20:42 UTC] PHP Warning:  Unterminated comment starting line 6160 in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6160
+[02-Sep-2019 10:20:42 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING), expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6187
+[02-Sep-2019 10:22:01 UTC] PHP Parse error:  syntax error, unexpected ''project_n' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 5698
+[02-Sep-2019 10:26:59 UTC] PHP Warning:  Unterminated comment starting line 6158 in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6158
+[02-Sep-2019 10:26:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6189
+[02-Sep-2019 10:27:24 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 4156
+[02-Sep-2019 10:32:27 UTC] PHP Warning:  Unterminated comment starting line 6164 in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6164
+[02-Sep-2019 10:32:27 UTC] PHP Parse error:  syntax error, unexpected 'description' (T_STRING), expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6190
+[02-Sep-2019 10:34:34 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 4655
+[02-Sep-2019 10:38:05 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 5707
+[02-Sep-2019 10:40:31 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 4655
+[02-Sep-2019 10:41:13 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 4656
+[02-Sep-2019 10:41:41 UTC] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 2256
+[02-Sep-2019 10:42:15 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 3256
+[02-Sep-2019 10:43:47 UTC] PHP Parse error:  syntax error, unexpected ''' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 6683
+[02-Sep-2019 10:46:40 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 4164
+[02-Sep-2019 11:57:11 Europe/London] PHP Fatal error:  Class 'User' not found in /home/lone9378/public_html/dataapi/system/database/drivers/mysqli/mysqli_result.php on line 183
+[02-Sep-2019 11:08:26 UTC] PHP Warning:  Unterminated comment starting line 1757 in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 1757
+[02-Sep-2019 11:08:26 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 1760
+[05-Sep-2019 09:27:50 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 142
+[16-Sep-2019 07:39:28 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 292
+[16-Sep-2019 07:39:39 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 292
+[16-Sep-2019 07:40:06 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 292
+[16-Sep-2019 07:40:49 Europe/London] PHP Fatal error:  Call to a member function drhomework_ref_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 297
+[16-Sep-2019 08:00:57 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 280
+[16-Sep-2019 08:11:43 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 280
+[16-Sep-2019 08:11:50 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 280
+[16-Sep-2019 08:13:49 Europe/London] PHP Fatal error:  Call to a member function Tutoring_client_id_exists() on null in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 280
+[16-Sep-2019 08:25:58 Europe/London] PHP Fatal error:  Cannot redeclare class Project in /home/lone9378/public_html/dataapi/application/models/Tutor.php on line 0
+[16-Sep-2019 12:22:09 Europe/London] PHP Fatal error:  Call to a member function result() on array in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 305
+[30-Sep-2019 05:09:12 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:09:15 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:09:17 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:09:19 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:05 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:06 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:07 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:08 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:09 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:10 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:11 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 05:10:29 UTC] PHP Parse error:  syntax error, unexpected 'Drhomework123456' (T_STRING) in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 539
+[30-Sep-2019 08:43:10 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:10 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:11 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:11 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:11 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:11 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:12 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:12 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:12 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:12 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:13 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:13 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:13 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:14 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:14 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:14 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:14 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:15 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:15 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:15 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:15 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:16 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:16 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:16 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:16 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:17 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:17 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:17 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:17 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:18 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:23 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:24 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:24 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:24 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:24 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:25 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:25 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:25 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:25 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:26 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:26 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:26 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:26 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:27 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:27 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:27 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:28 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:28 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:28 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:28 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:29 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:29 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:29 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:29 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:30 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:30 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:30 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:30 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:31 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[30-Sep-2019 08:43:31 Europe/London] PHP Fatal error:  Call to undefined method CI_DB_mysqli_result::result_row() in /home/lone9378/public_html/dataapi/application/controllers/TutoringController.php on line 553
+[20-Mar-2020 06:48:51 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/lone9378/public_html/dataapi/application/controllers/NewRowController.php on line 84
+[20-Mar-2020 07:34:00 UTC] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/lone9378/public_html/dataapi/application/controllers/NewRowController.php on line 102
+[25-Mar-2020 10:49:41 UTC] PHP Parse error:  syntax error, unexpected ''e' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/lone9378/public_html/dataapi/application/controllers/ProjectController.php on line 886

@@ -760,11 +760,11 @@ $(document).ready(function(){
 
     var tot_students= $("#students_id :selected").length;
 
-//    if(tot_students<1||tot_students>8){
-//
-//         alert(tot_students+'-Student, choose (1-8)students!');  return false;
-//
-//    }  
+    if(tot_students<1||tot_students>8){
+
+         alert(tot_students+'-Student, choose (1-8)students!');  return false;
+
+    }  
 
   });
 
@@ -891,7 +891,7 @@ $(document).ready(function(){
 
                             $totStud=mysql_num_rows($res);?>
 
-<!--                            <label for="lesson_name">Choose (1-8)students:</label>-->
+                            <label for="lesson_name">Choose (1-8)students:</label>
 
                               <div id="student_div"></div>
 
