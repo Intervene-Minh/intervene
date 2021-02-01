@@ -173,7 +173,7 @@ else if($role =="teacher")
       <div class="container">
       <form class="form-signin" method="POST">
 
-      <h2 class="form-signin-heading text-primary text-center">Please Login 7</h2>
+      <h2 class="form-signin-heading text-primary text-center">Please Login</h2>
 
        <?php
        echo (isset($_SESSION['suspended']))?$_SESSION['suspended']:NULL;
