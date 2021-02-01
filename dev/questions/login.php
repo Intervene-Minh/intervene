@@ -383,7 +383,7 @@ a.Button--primary, button.Button--primary {
                   <?php echo ($error != "") ? "<div class='alert alert-danger' role='alert' style='text-align:center;background-color:#d9534f;border-color:#d9534f;color:#fff'>" . $error . "</div>" : ""; ?>
                 <form  id="form-login" class="form-login mb-4" action="" method="post" >
                  <div class="form-group">
-                  <label class="d-none" for="signup-email">Role</label>
+                  <label class="d-none" for="signup-email">dffRole</label>
                   <select name="role" class="form-control form-control-lg uname" onchange='SelectRole(this.value);'>
                         <option value="">Student</option>
                         <option value="teacher">Teacher</option>
