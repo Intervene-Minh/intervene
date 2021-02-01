@@ -1,1 +1,0 @@
-<h4 class="widget-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i><a href="lessons.php">Lessons</a></h4>

@@ -1,1 +1,0 @@
-<a href="http://codingcyber.com/refer/login-script-download/">You can learn Developing This Code for Only $48</a>

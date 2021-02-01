@@ -1,6 +1,0 @@
-<!-- Footer -->   
-    
-        
-    </body>
-</html>
-<!-- ./Footer -->

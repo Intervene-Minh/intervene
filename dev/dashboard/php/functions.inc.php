@@ -1,6 +1,0 @@
-<?php
-/***
- * Functons::teachers
- * **/
-
-?>

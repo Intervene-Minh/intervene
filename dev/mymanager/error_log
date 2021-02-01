@@ -1,8 +1,0 @@
-[17-Nov-2020 01:09:09 CST6CDT] PHP Notice:  Undefined index: student_id in /home/lone9378/public_html/tutorgigs.io/mymanager/header.php on line 197
-[17-Nov-2020 01:09:09 CST6CDT] PHP Notice:  Undefined variable: pending_arr in /home/lone9378/public_html/tutorgigs.io/mymanager/sidebar.php on line 60
-[17-Nov-2020 01:09:09 CST6CDT] PHP Notice:  Undefined index: email in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 182
-[17-Nov-2020 01:09:09 CST6CDT] PHP Notice:  Undefined index: first_name in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 183
-[17-Nov-2020 01:09:09 CST6CDT] PHP Notice:  Undefined index: last_name in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 184
-[17-Nov-2020 01:09:09 CST6CDT] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 370
-[17-Nov-2020 01:09:09 CST6CDT] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 370
-[17-Nov-2020 01:09:09 CST6CDT] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/lone9378/public_html/tutorgigs.io/mymanager/tutor-list.php on line 370
