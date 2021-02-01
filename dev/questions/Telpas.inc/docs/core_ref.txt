@@ -1,0 +1,6 @@
+# opps crud
+#Telpas_quiz.php
+
+//////////////
+1- https://www.codeofaninja.com/2014/06/php-object-oriented-crud-example-oop.html
+2- https://codingcyber.org/crud-application-oop-php-7394/

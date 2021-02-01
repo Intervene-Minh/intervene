@@ -1,0 +1,1 @@
+[14-Jan-2020 09:27:11 UTC] PHP Fatal error:  Call to a member function prepare() on null in /home/lone9378/public_html/questions/Telpas.inc/libraries/Telpas_quiz.php on line 75

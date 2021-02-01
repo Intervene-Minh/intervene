@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Myriad Pro Semibold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+*{
+	box-sizing: border-box;
+	font-family: 'Myriad Pro Regular';
+   
+	color: #686868;
+	font-size: 16px;
+	line-height:7mm !important;
+}
+#list-document .ct_heading{
+	display:inline-block;
+	width:100%;
+	text-align:justify;
+}
+
+table td, table th {
+	padding: 5px;
+}
+
+.ct_display table, ul, li {
+	display: block;
+	clear: both;
+	float: none;
+	/* width: 100%; */
+}
+
+.ct_display p {
+	margin: 10px 0;
+}
+.ct_display img {
+	margin: 20px 0;
+}
+.ct_display ul {
+	margin: 10px 0 10px 20px;
+}
+.ct_display li {
+	padding: 5px 0;
+}
+.tab-question{
+	width:100%;
+	page-break-inside:avoid;
+	font-size: 16px;
+	line-height:7mm !important;
+}
+.list-answer{
+	width:100%;
+	font-size: 16px;
+	line-height:7mm !important;
+}
+#tab-answer {
+	width:100%;
+	border-collapse: collapse;
+}
+#tab-answer th,#tab-answer tr td:first-child {
+	text-align:center;
+}
+#tab-answer th, #tab-answer td {
+	border: 1px solid #000;
+}
+
+#small-group {
+	width:100%;
+	border-collapse: collapse;
+}
+#small-group th, #small-group td {
+	border: 1px solid #000;
+}
+#small-group td {
+	height:30px;
+}
+.passage-content{
+   font-size: 16px;	
+}
+.tab-question table{
+	margin: 20px 0;
+}
+p{
+	word-wrap: break-word;      /* IE 5.5-7 */
+      white-space: -moz-pre-wrap; /* Firefox 1.0-2.0 */
+      white-space: pre-wrap;      /* current browsers */
+}
+/* @page{
+	background-image:url('../images/logo.png');
+	background-repeat: no-repeat;
+	background-position:center 30px;
+} */
+.underline{
+	text-decoration:underline;
+}
+.instructions-example-item{
+	margin-top:15px;
+	padding-left:20px;
+	font-size: 16px;
+	line-height:7mm !important;
+}
+#text-after-question{
+	margin-top:30px;
+	font-size: 16px;
+	line-height:7mm !important;
+}
+#teach-anskey{
+	text-align:center;
+	font-size: 16px;
+	line-height:7mm !important;
+	margin-bottom:35px;
+}
+.mpdf-footer{
+	text-align:center;
+}

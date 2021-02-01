@@ -1,0 +1,177 @@
+<?php 
+include('inc/connection.php'); 
+session_start();
+ob_start();
+
+//Set Timezone For CST ///////
+include('libraries/newrow.functions.php');
+$today = date("Y-m-d H:i:s"); // 
+ $success_msg=[];
+////////////////////////////////////
+// echo 'new NewrowToken for admin Creeated!, Reload page again! '; 
+   $currToken=_get_token(); 
+  //echo 'Token=='.$currToken; 
+   
+   if(!isset($_SESSION['live'])){
+    exit('Curr Live Session ID not found! ');
+   }
+
+$curr_ses_id=$_SESSION['live']['live_ses_id'];
+
+$Intervention_id=$curr_ses_id;
+ $Room=mysql_fetch_assoc(mysql_query(" SELECT * FROM newrow_rooms WHERE ses_tutoring_id= '$Intervention_id' ")); #Test
+   
+   //print_r($Room);
+  $get_newrow_room_id=$Room['newrow_room_id'];  //Intervention_id
+ $loginStudentId=$_SESSION['student_id'];
+ // student_id
+   $Student_newrow=mysql_fetch_assoc(mysql_query(" SELECT * FROM newrow_students WHERE stu_intervene_id= '$loginStudentId'"));
+   ///////////Check tutor if aleardy Assgined ////////
+  
+
+
+/*
+    $isStudentAdded=mysql_fetch_assoc(mysql_query(" SELECT * FROM newrow_room_users WHERE ses_tutoring_id= '$Intervention_id' 
+      AND intervene_user_id= '$loginStudentId' AND user_type= 'student' "));
+
+
+//print_r($isStudentAdded);
+    if(isset($isStudentAdded)&&!empty($isStudentAdded)){
+      $canGetRoomAccess='yes';  // then only get ROOM url for-tutor
+      $success_msg[]='aleardy aded to rooom';
+     
+
+    }else{
+      $canGetRoomAccess='yes';
+    }
+*/
+$canGetRoomAccess='yes';
+   //////////////////
+   $arr_board=[];
+   $arr_board['newrow_room_id']=$get_newrow_room_id;
+   $arr_board['newrow_user_id']=$Student_newrow['newrow_ref_id'];
+   $arr_board['live_tutoring_id']=$Intervention_id;
+
+   //////Get ROOM Link ///////////////////////////
+   if(isset($canGetRoomAccess)&&$canGetRoomAccess=='yes'){
+  
+    $n_room_id=$arr_board['newrow_room_id']; 
+    $n_user_id=$arr_board['newrow_user_id'];
+///////////////////////////
+  
+  $token=$currToken;  //Get token 
+  $Api_url='https://smart.newrow.com/backend/api/rooms/url/'.$n_room_id.'?user_id='.$n_user_id;
+
+/////////////////////////////
+ $ch = curl_init($Api_url);
+// Returns the data/output as a string instead of raw data
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+//Set your auth headers
+curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+   'Content-Type: application/json',
+   'Authorization: Bearer ' . $token
+   ));
+
+  // get stringified data/output. See CURLOPT_RETURNTRANSFER
+  $data = curl_exec($ch);
+  $Board=json_decode($data);
+  //print_r($data); 
+
+  // get info about the request
+  $info = curl_getinfo($ch);
+  // close curl resource to free up system resources
+  curl_close($ch);
+////////////////////////////////////////
+   }
+
+
+//print_r($Board);
+
+?>
+
+
+<div id="home main" class="clear fullwidth tab-pane fade in active">
+ <img src="https://intervene.io/assets/images/Intervene%20new.png" alt="Logo" style="height:40px">
+    <br/>
+   </div>
+
+<?php //echo $Board->data->url ;?>
+
+
+<iframe
+  allow="microphone *; camera *; speakers *; usermedia *; autoplay*;" 
+  allowfullscreen   
+  src="<?php echo $Board->data->url ;?>"  height="100%" width="100%">
+</iframe>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+  is_quizz_move(); // Stop Quiz MOVE
+
+
+
+function is_quizz_move(){
+
+  console.log('is_quizz_move:: ');// is_quizz_move
+
+      var url_1="https://intervene.io/questions/student_live_ses_ajax.php";
+
+
+      $.ajax({ 
+            type: 'GET', 
+            url: url_1, 
+            data: { get_param: 'student_actvity' }, 
+            dataType: 'json',
+            success: function (data) { 
+            // alert('Test');
+            var str=' Test info='+data.status;
+             
+             console.log('===status='+data.status);
+             // quiz_url
+              var quiz_url='';
+              // $quiz_link="student_quiz.php?id=".$row['id'];# 'quiz active'; 
+             var move_url='';
+             
+             //console.log('sent_from='+data.sent_from);
+             move_url=data.content.quiz_url;
+
+             if(data.cur_board!='newrow'){
+              var groupword_board='https://intervene.io/questions/student_board_2.php';
+              console.log('Board have changed Re-direct to board2');
+              window.location.href =groupword_board;
+             }
+
+             if(data.status=='ok'){
+               window.location.href =move_url;//actvity.php |student_board.php
+             }
+              
+             // window.location.href =move_url;//actvity.php |student_board.php
+              
+            // }
+
+
+             // console.log(data.is_redirect+'=is_redirect');  // url_redirect
+             //str+=data.length;
+           // Display modal
+           $("#items_id").html(str);
+          // $("#myModal").modal('show'); 
+
+
+        
+      
+    
+        // $(".last-updated").append(data.data.updated);
+        // $(".aqiStatus").html(data.data.text); 
+        }
+    }); 
+
+       setTimeout(function(){
+      is_quizz_move();},3000);
+
+}
+
+
+</script>

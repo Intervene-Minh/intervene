@@ -1,0 +1,63 @@
+<?php
+// down_students
+$error = '';
+$author = 1;
+$datetm = date('Y-m-d H:i:s');
+
+include('inc/connection.php'); 
+session_start();
+	ob_start();
+        
+        
+$created = date('Y-m-d H:i:s');
+
+$user_id = $_SESSION['login_id'];
+$query = mysql_query("SELECT school FROM users WHERE id=" . $user_id);
+$rows = mysql_num_rows($query);
+if ($rows == 1) {
+    $row = mysql_fetch_assoc($query);
+    $school_id = $row['school'];
+}
+
+
+
+///  download CSV////////////
+ if(isset($_GET['id'])){
+$class_id =$_GET['id']; // 
+//echo  $class_id.'class id'; die;
+//$ff=''.$class_id;
+   $data= mysql_fetch_assoc(mysql_query("SELECT class_name FROM `classes` WHERE id=".$class_id)); 
+   $className=(!empty($data['class_name']))?$data['class_name']:"Class_".$class_id;
+   
+//$class_id =48; // 
+    $classes_res=mysql_query('SELECT first_name, middle_name, last_name, username FROM students WHERE '
+            . 'class_id = \''.$class_id.'\' AND '
+            . 'teacher_id = \''.$user_id.'\' AND '
+            . 'school_id = \''.$school_id.'\' ');  
+ 
+   $data_arr=array();  //$sdddr=NULL;
+        
+
+ // 1st 
+//header('Content-Type: application/csv');
+//header('Content-Disposition: attachment; filename="filename.csv"');
+//echo $data; exit();
+//////////////////// 2nd Way///////////////////////
+
+
+// output headers so that the file is downloaded rather than displayed
+header('Content-Type: text/csv; charset=utf-8');
+header('Content-Disposition: attachment; filename='.$className.'.csv');
+
+// create a file pointer connected to the output stream
+$output = fopen('php://output', 'w');
+
+// output the column headings
+fputcsv($output, array('First Name', 'Middle Name', 'Last Name','Username'));
+// first_name, middle_name, last_name, username, password
+ // Set passwprd :
+// loop over the rows, outputting them
+while ($row = mysql_fetch_assoc($classes_res)) fputcsv($output, $row);
+
+
+ }else exit('Page not found. !');

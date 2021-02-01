@@ -1,0 +1,55 @@
+
+RewriteOptions inherit
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTP_HOST} ^intervene\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.intervene\.io$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^getstarted\/rsvp\/$ "https\:\/\/goo\.gl\/forms\/mHFYTe5qZYVSUGAZ2" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^rsvp\/$ "https\:\/\/goo\.gl\/forms\/mHFYTe5qZYVSUGAZ2" [R=301,L]
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteRule ^demovideo$ "https\:\/\/www\.intervene\.io\/getstarted\/demovideo\.php" [R=301,L]
+RewriteCond %{HTTP_HOST} ^intervene\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.intervene\.io$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^kipptest$ "https\:\/\/smart\.newrow\.com\/\#\/room\/haf\-136" [R=301,L]
+RewriteCond %{HTTP_HOST} ^intervene\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.intervene\.io$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^kipptest1$ "https\:\/\/smart\.newrow\.com\/\#\/room\/ikw\-013" [R=301,L]
+RewriteCond %{HTTP_HOST} ^intervene\.io$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.intervene\.io$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^kipptest2$ "https\:\/\/smart\.newrow\.com\/\#\/room\/leq\-089" [R=301,L]
+Header always edit Set-Cookie (.*) "$1; SameSite=None; Secure"
+RewriteRule ^telpaspro$ "https\:\/\/www\.intervene\.io\/telpaspro\.php" [R=301,L]
+RewriteRule ^TELPASPRO$ "https\:\/\/www\.intervene\.io\/telpaspro\.php" [R=301,L]
+RewriteRule ^TELPAS$ "https\:\/\/www\.intervene\.io\/telpaspro\.php" [R=301,L]
+RewriteRule ^telpas$ "https\:\/\/www\.intervene\.io\/telpaspro\.php" [R=301,L]
+RewriteRule ^tabse$ "https\:\/\/www\.intervene\.io\/telpaspro-tabse\.php" [R=301,L]
+RewriteRule ^TABSE$ "https\:\/\/www\.intervene\.io\/telpaspro-tabse\.php" [R=301,L]
+RewriteRule ^ALAS$ "https\:\/\/www\.intervene\.io\/ellpro\.php" [R=301,L]
+RewriteRule ^alas$ "https\:\/\/www\.intervene\.io\/ellpro\.php" [R=301,L]
+RewriteRule ^ELL$ "https\:\/\/www\.intervene\.io\/ellpro\.php" [R=301,L]
+RewriteRule ^ell$ "https\:\/\/www\.intervene\.io\/ellpro\.php" [R=301,L]
+
+RewriteRule ^schoology$ "\/lti\/connect\.php" [R=301,L]
